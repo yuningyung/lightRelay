@@ -113,7 +113,8 @@ void setup() {
 
     WiFi.mode(WIFI_STA); 
     WiFi.begin(ssid, password);
-
+    
+    int i = 0;
     while (WiFi.status() != WL_CONNECTED) {
       delay(500);
       Serial.print(".");
